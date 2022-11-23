@@ -1,0 +1,20 @@
+Q2/- Differentiate between Hibernate and JPA.
+Ans: 
+1.JPA is a specification and Hibernate is its one of the famous implementation.
+
+2.Hibernate:- it is one of the ORM based framework s/w.  other s/w are :- toplink,ibatis,etc..
+
+3.JPA:- (Java persistence api) :- it is an open specification given by Oracle corp,  to develop any ORM based s/w .
+
+4.JPA provides a standard api to work with any kind of ORM based s/w .
+
+5.JPA api belongs from "javax.persistence" package.
+
+6.Hibernate is one of the most frequently used JPA implementation
+
+7.HB provides its own api to develop ORM based persistence logic , if we use those api then
+our application will become vendor lock, ie we can not port our application accross multiple 
+ORM s/w. 
+
+ 8.we get the JPA api , along with any ORM s/w , becoz all the ORM s/w implements 
+JPA specification.

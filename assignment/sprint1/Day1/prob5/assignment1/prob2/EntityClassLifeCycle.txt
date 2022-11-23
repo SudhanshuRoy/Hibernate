@@ -1,0 +1,62 @@
+an entity obj has the 3 life-cycle state:-
+
+1.new state/transient state
+
+2.persistence state/managed state
+
+3.detached state
+
+
+1.new state/transient state:- 
+------------------------------------
+
+--if we create a object of persistence class and this class is not attached with the EM obj, then
+this stage is known as new state/transient state
+
+Student s=new Student(10,"ram",780);
+
+
+2.persistence state:- 
+-------------------------
+
+--if a persistence class obj or Entity obj is associated with EM obj, then this obj will be in persistence state.
+
+ex:-
+
+when we call a persist(-) method by supplying Student entity obj then at time student obj will be in persistence state
+
+or 
+
+when we call find() method and this method returns the Student obj, then that obj will also be in persistence state.
+
+Note:- when an entity class obj is in persisitence state ,it is in-sync with the DB table ,i.e 
+any change made on that obj inside the tx area will reflect to the table automatically.
+
+
+ex:-
+
+
+
+		Student s=new Student(150,"manoj",850); // here student obj is in transient state .
+		
+		em.getTransaction().begin();
+		
+		em.persist(s); // here it is in the persistence state
+		
+		s.setMarks(900);
+		
+		
+		em.getTransaction().commit();
+		
+
+detached state:-
+-------------------
+
+--when we call  close() method   or call clear() method on the EM obj, then all the associated entity obj will be in detached state.
+
+--in this stage the entity objs will not be in-sync with the table.
+
+
+
+Note:- we have a merge() method in EM obj, when we call this method by supplying any detached object then that detached object will bring back in the persistence state.
+

@@ -1,0 +1,21 @@
+Q4/-Explain about the ORM, what are the benefits of the ORM approach over the
+JDBC approach.
+Ans:
+1.it can persist/store java obj to the DB directly.
+
+2.it supports POJO and POJI model
+
+3.it is a lightweight s/w becoz to excute the ORM based application we need not install any kind of servers.
+
+4.ORM persistance logic is DB independent. it is portable accross multiple DB s/ws.
+(beocz here we deal with object, not with the sql queires)
+
+5.prevent the developers from boiler plate code coding to perform CRUD operarions.
+
+6.it generates fine tuned sql statements internally that improves the performance.
+
+7.it provides caching mechanism (maintaing one local copy to inhance the performance)
+
+8.it provides implicit connection pooling.
+
+9.exception handling is optional becoz it throws unchecked exceptions.

@@ -1,0 +1,14 @@
+Q3/- What is the Difference between the Java Bean class and the POJO class.
+Ans:
+Plain old java object
+
+--it is a normal java class not bounded with any technology or f/w s/ws.
+i.e a java class that is not implementing or extending technology/framework api related 
+classes or interfaces.
+
+--a java  class that can be compiled without adding any extra jar files in the classpath are known
+as a POJO class.
+
+POJI (plain old java interface )
+
+Note:- every java bean class is a POJO but every POJO is not a  java bean.

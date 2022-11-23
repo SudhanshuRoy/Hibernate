@@ -1,0 +1,11 @@
+Q2/- What is the POM, Explain the basic properties of the pom.xml file in Maven based
+application.
+Asn: 
+pom.xml :  (project object model) : all the information will be their in this file.
+
+--in this model, entire application itself will be considered as an object.
+
+it defines following properties for a project:
+
+1. Name
+2.version

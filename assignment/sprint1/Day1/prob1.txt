@@ -1,0 +1,18 @@
+1/ Explain the Build process of the Java Application, How the Maven helps in the
+application build?
+Ans: There are the process java application have to go and without maven if you are making any mistake then
+you and do all the process manually and with maven will do for you all the process.
+
+1. validate: - in this phase it will verify the project diectory structure is valid or not. and it has pom.xml file is there or not.
+
+2.compile: maven compiles all the source code of the project by downloading and adding requied jar files in the classpath.
+
+3.test-compile: if we have written any unit test cases those code will be compiled.
+
+4.test : maven will run all the test cases and it will show how many test cases are success and how many fails.
+
+5.package : maven will bundle our java code into a jar file inside 'target' folder.
+
+6.install : that jar file in step 5 will be stored in the localrepo.
+
+7.deploy : maven stores the application jar file to the central repo.
